@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <a-scene embedded arjs="source:webcam;">
+      <a-camera
+        gps-camera="simulateLatitude:-8.673155;simulateLongitude:115.233785;"
+        rotation-reader
+      >
+      </a-camera>
+      <a-text
+        value="monumen bajra sandhi"
+        look-at="[gps-camera]"
+        align="center"
+        scale="15 15 15"
+        gps-entity-place="latitude:-8.671903;longitude:115.233838;"
+      ></a-text>
+      <a-text
+        value="Bank artha graha bali"
+        look-at="[gps-camera]"
+        align="center"
+        scale="15 15 15"
+        gps-entity-place="latitude:-8.673444;longitude:115.233849;"
+      ></a-text>
+      <a-text
+        value="Bank BRI"
+        look-at="[gps-camera]"
+        align="center"
+        scale="15 15 15"
+        gps-entity-place="latitude:-8.671894;longitude:115.231766;"
+      ></a-text>
+    </a-scene>
+  </body>
+</html>
