@@ -13,31 +13,53 @@
   <body style="margin: 0; overflow: hidden">
     <a-scene embedded arjs="source:webcam;">
       <a-camera
+        position="0 1.6 0"
         gps-camera="simulateLatitude:-8.673155;simulateLongitude:115.233785;"
         rotation-reader
       >
       </a-camera>
-      <a-text
+      <a-image
+        src="./img/monumen.jpeg"
+        look-at="[gps-camera]"
+        scale="30 30 1"
+        gps-entity-place="latitude:-8.671903;longitude:115.233838;"
+      >
+      </a-image>
+      <!-- <a-text
         value="monumen bajra sandhi"
         look-at="[gps-camera]"
         align="center"
         scale="15 15 15"
         gps-entity-place="latitude:-8.671903;longitude:115.233838;"
-      ></a-text>
-      <a-text
-        value="Bank artha graha bali"
+      ></a-text> -->
+      <a-image
+        src="./img/BAG.jpeg"
         look-at="[gps-camera]"
+        scale="30 30 1"
+        gps-entity-place="latitude:-8.673444;longitude:115.233849;"
+      >
+      </a-image>
+      <!-- <a-text
+        value="Bank artha graha bali"
+        look-at="[gps-cam2022-11-14.jpegera]"
         align="center"
         scale="15 15 15"
         gps-entity-place="latitude:-8.673444;longitude:115.233849;"
-      ></a-text>
-      <a-text
+      ></a-text> -->
+      <a-image
+        src="./img/BRI.jpeg"
+        look-at="[gps-camera]"
+        scale="30 30 1"
+        gps-entity-place="latitude:-8.671894;longitude:115.231766;"
+      >
+      </a-image>
+      <!-- <a-text
         value="Bank BRI"
         look-at="[gps-camera]"
         align="center"
         scale="15 15 15"
         gps-entity-place="latitude:-8.671894;longitude:115.231766;"
-      ></a-text>
+      ></a-text> -->
     </a-scene>
   </body>
 </html>
